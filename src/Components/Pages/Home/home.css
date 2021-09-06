@@ -1,0 +1,11 @@
+.avatar{
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* margin-left: 50px; */
+}
+.avatar-content p:nth-of-type(1){
+font-size: 15px;
+font-weight: 600;
+}
