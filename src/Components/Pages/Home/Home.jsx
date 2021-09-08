@@ -63,7 +63,6 @@ function Home(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  let history = useHistory();
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };

@@ -1,4 +1,3 @@
-import InboxIcon from '@material-ui/icons/MoveToInbox';
 import HomeIcon from '@material-ui/icons/Home';
 import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
 import InfoIcon from '@material-ui/icons/Info';
