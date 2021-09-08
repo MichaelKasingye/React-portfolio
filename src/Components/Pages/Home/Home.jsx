@@ -17,7 +17,6 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import { list } from '../../Resuables/ListMenuJs/listMenu';
 import Avatars from '../../Resuables/Avatar/Avatar';
-import { useHistory } from "react-router-dom";
 
 import '../../styles/home.css'
 import Hero from '../../Resuables/Hero/Hero';
