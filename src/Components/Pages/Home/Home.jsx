@@ -17,7 +17,10 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import { list } from '../../Resuables/ListMenuJs/listMenu';
 import Avatars from '../../Resuables/Avatar/Avatar';
-import './home.css'
+import { useHistory } from "react-router-dom";
+
+import '../../styles/home.css'
+import Hero from '../../Resuables/Hero/Hero';
 
 
 const drawerWidth = 240;
@@ -60,7 +63,7 @@ function Home(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  let history = useHistory();
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -75,7 +78,7 @@ function Home(props) {
       <div className="avatar-content">
  <h1>Michael Kasingye</h1>
      <p>Software Developer</p>
-     <p>EDU Outbox Uganda</p>
+     <p>social media icons</p>
 
       </div>
     
@@ -89,12 +92,12 @@ function Home(props) {
         ))} */}
 
   {list.map(menu => (
-
-<ListItem button >
+<div className="links">
+<Link href={menu.link}><ListItem button  >
             <ListItemIcon> {menu.icon}  </ListItemIcon>
-            <Link to={menu.link}><ListItemText primary={menu.title} /></Link>
-            </ListItem>
-))}
+            <ListItemText primary={menu.title} />
+            </ListItem></Link></div>
+))} 
 </List>
     </div>
   );
@@ -116,7 +119,7 @@ function Home(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h5" noWrap>
-            MicHael
+             <p className='logo'>MicHaeL</p>
           </Typography>
         </Toolbar>
       </AppBar>
@@ -154,29 +157,7 @@ function Home(props) {
       </nav>
       <main className={classes.content}>
         <div className={classes.toolbar} />
-        <Typography paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-          facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-          gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-          donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-          adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-          Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-          imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-          arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-          donec massa sapien faucibus et molestie ac.
-        </Typography>
-        <Typography paragraph>
-          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-          facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-          tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-          consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-          vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-          hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-          tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-          nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-          accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+          <Hero/>
       </main>
     </div>
   );

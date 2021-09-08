@@ -1,51 +1,58 @@
 import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import MenuIcon from '@material-ui/icons/Menu';
+import HomeIcon from '@material-ui/icons/Home';
+import VerifiedUserIcon from '@material-ui/icons/VerifiedUser';
+import InfoIcon from '@material-ui/icons/Info';
+import WorkIcon from '@material-ui/icons/Work';
+import ContactsIcon from '@material-ui/icons/Contacts';
+import BrushIcon from '@material-ui/icons/Brush';
+import TrendingUpIcon from '@material-ui/icons/TrendingUp';
+import AccessibilityNewIcon from '@material-ui/icons/AccessibilityNew';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 export const list =[
      {
     title:"Home",
     link:"/",
-    icon:<InboxIcon />
+    icon:<HomeIcon />
 },
 {
     title:"About",
     link:"/about",
-    icon:<MailIcon />
+    icon:<InfoIcon />
 },
 {
     title:"Projects",
     link:"/projects",
-    icon:<MenuIcon />
+    icon:<WorkIcon />
 },
 {
     title:"Certification",
     link:"/certification",
-    icon:<InboxIcon />
+    icon:<VerifiedUserIcon />
 },
 {
     title:"Resume",
     link:"/resume",
-    icon:<InboxIcon />
+    icon:<ContactsIcon />
 },
 {
     title:"Skills",
     link:"/skills",
-    icon:<InboxIcon />
+    icon:<BrushIcon />
 },
 {
     title:"Blogs",
     link:"/blogs",
-    icon:<InboxIcon />
+    icon:<MenuBookIcon />
 },
 {
     title:"Career Journey",
     link:"/journey",
-    icon:<InboxIcon />
+    icon:<TrendingUpIcon />
 },
 {
     title:"Contact",
     link:"/contact",
-    icon:<InboxIcon />
+    icon:<AccessibilityNewIcon />
 },
 
 ]
