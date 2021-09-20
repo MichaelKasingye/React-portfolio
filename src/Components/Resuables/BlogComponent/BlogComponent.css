@@ -1,0 +1,20 @@
+.Resume button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: larger;
+  padding: 20px;
+  height: 40px;
+  background-color:#3F51B5 ;
+}
+
+.Resume button:hover{
+  background-color: white;
+  color:#3F51B5 ;
+}
+
+.Resume button:active{
+  background-color: white;
+  color:#DE7E3F ;
+}
