@@ -1,0 +1,46 @@
+.contact_container{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+}
+.form_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_container textarea{
+  margin-bottom: 30px;
+  height: 70px;
+  width: 400px;
+}
+.form_control{
+  margin-bottom: 30px;
+  height: 40px;
+  width: 400px;
+}
+.submit{
+  height: 40px;
+  width: 100px;
+  font-weight: 700;
+  background-color: #3F51B5;
+  color: white;
+}
+.submit:hover{
+
+  background-color:white ;
+  color: #3F51B5;
+}
+.submit:active{
+ 
+  background-color:white ;
+  color: #B33939;
+}
+iframe {
+  /* border: 1px solid black; */
+  border: none;
+  width: 100%;
+  height: 80vh;
+}

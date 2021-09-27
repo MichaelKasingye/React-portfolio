@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
-import axios from 'axios';
+import React from 'react'
+// import { Link } from 'react-router-dom';
+// import axios from 'axios';
 
 import './BlogComponent.css'
 function BlogComponent({data}) {
-const [info, setInfo] = useState();
-const [errorMessage, seteErrorMessage] = useState();
+// const [info, setInfo] = useState();
+// const [errorMessage, seteErrorMessage] = useState();
 
 
 

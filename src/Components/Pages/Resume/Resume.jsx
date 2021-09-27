@@ -21,7 +21,7 @@ import Avatars from '../../Resuables/Avatar/Avatar';
 import '../../styles/home.css'
 import Resume from '../../Resuables/ResumeComponent/ResumeComponent';
 import {menuIcons} from '../../Resuables/reactIcons/icons'
-import {itemData} from '../../Resuables/Data/data';
+// import {itemData} from '../../Resuables/Data/data';
 // console.log(itemData);
 const drawerWidth = 240;
 

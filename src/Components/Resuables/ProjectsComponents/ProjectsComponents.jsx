@@ -8,7 +8,7 @@ function Projects({data}) {
     <div className= "project_group">
 
 {data.map((info, index) => (
-  <Link to={{ pathname: info.link}} target="_blank"  key={index}>
+  <Link to={{ pathname: info.link}} target="_blank"  key={info.link}>
    <div className="project_card" key={info.img}>
       <div className="project_image">
       <img src={info.img} alt={info.title} />

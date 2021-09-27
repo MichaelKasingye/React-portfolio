@@ -19,8 +19,8 @@ import { list, externalLinks } from '../../Resuables/ListMenuJs/listMenu';
 import Avatars from '../../Resuables/Avatar/Avatar';
 
 import '../../styles/home.css'
-import Blogs from '../../Resuables/BlogComponent/BlogComponent';
-import {menuIcons} from '../../Resuables/reactIcons/icons'
+import Contact from '../../Resuables/ContactComponent/ContactComponent';
+import {menuIcons} from '../../Resuables/reactIcons/icons';
 // import {itemData} from '../../Resuables/Data/data';
 // console.log(itemData);
 const drawerWidth = 240;
@@ -102,7 +102,9 @@ function Projects(props) {
             </ListItem></Link></div>
 ))} 
 
- <div className="links" >
+
+{/* SECOND LIST */}
+<div className="links" >
 <Link onClick={externalLinks[0].link}>
   <ListItem button  >
             <ListItemIcon> {externalLinks[0].icon}  </ListItemIcon>
@@ -130,9 +132,11 @@ function Projects(props) {
             </ListItem>
             </Link>
 </div>
+{/* END SECOND LIST */}
 
 </List>
     </div>
+    
   );
 
   const container = window !== undefined ? () => window().document.body : undefined;
@@ -192,9 +196,9 @@ function Projects(props) {
         <div className={classes.toolbar} />
 
         {/* Body Here */}
-        <h1 className="title">Blogs</h1>
+        <h1 className="title">Resume</h1>
 
-          <Blogs
+          <Contact
           //  data={itemData}
            />
 

@@ -12,7 +12,7 @@ import Resume from "./Components/Pages/Resume/Resume";
 import Certification from "./Components/Pages/Certification/Certification";
 // import CareerJourney from "./Components/Pages/CareerJourney/CareerJourney";
 import Blogs from "./Components/Pages/Blogs/Blogs";
-// import Contact from "./Components/Pages/Contact/Contact";
+import Contact from "./Components/Pages/Contact/Contact";
 // import Skills from "./Components/Pages/Contact/Skills";
 
 
@@ -28,7 +28,7 @@ function App() {
           <Route path="/resume" component={Resume} />
           {/* <Route path="/journey" component={CareerJourney} /> */}
           <Route path="/blogs" component={Blogs} />
-          {/* <Route path="/contact" component={Contact} /> */}
+          <Route path="/contact" component={Contact}/>
           <Route path="/projects" component={Projects} />
           {/* <Route path="/skills" component={Skills} /> */}
 
